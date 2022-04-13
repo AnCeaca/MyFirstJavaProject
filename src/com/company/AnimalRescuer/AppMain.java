@@ -1,30 +1,75 @@
 package com.company.AnimalRescuer;
 
+import java.sql.SQLOutput;
+
 public class AppMain {
 
     public static void main(String[] args) {
         Dog bubble = new Dog();
 
-        System.out.println("Dog's age is:"+ bubble.ageInMonths + "months.");
-        System.out.println("Dog's colour is"+ bubble.color);
-        System.out.println("Dog's name is"+ bubble.name);
+        bubble.setName("Cookie");
+        bubble.setAgeInMonths(12);
+        bubble.setColor("Grey");
+        bubble.setWeight(20);
+        bubble.setOwnerName("Mihai");
+        bubble.setRace("Bulldog");
+        bubble.setIsMale(true);
+
+        System.out.println("Dog's colour is "+ bubble.getColor());
+        System.out.println("Dog's age is "+ bubble.getAgeInMonths() + " months");
+        System.out.println("Dog's name is "+ bubble.getName());
+        System.out.println("Dog's weight is "+ bubble.getWeight());
+        System.out.println("Dog's owner name is "+ bubble.getOwnerName());
+        System.out.println("Dog's race is "+ bubble.getRace());
+        System.out.println("Dog is male? " + bubble.getIsMale());
+
+        System.out.println("  ");
 
         Cat fishy = new Cat();
 
-        System.out.println("Cat's name is:"+ fishy.name);
-        System.out.println("Cat's colour is:"+ fishy.color);
+        fishy.setName("Meowy");
+        fishy.setAgeInMonths(28);
+        fishy.setColor("Pink");
+        fishy.setWeight(19);
+        fishy.setOwnerName("Bianca");
+        fishy.setRace("Siamese");
+        fishy.setIsFemale(true);
+
+        System.out.println("Cat's colour is "+ fishy.getColor());
+        System.out.println("Cat's age is "+ fishy.getAgeInMonths() + " months");
+        System.out.println("Cat's name is "+ fishy.getName());
+        System.out.println("Cat's weight is "+ fishy.getWeight());
+        System.out.println("Cat's owner name is "+ fishy.getOwnerName());
+        System.out.println("Cat's race is "+ fishy.getRace());
+        System.out.println("Cat is female? " + fishy.getIsFemale());
+
+        System.out.println("  ");
 
         Veterinarian max = new Veterinarian();
-        System.out.println("Vets name is"+ max.name);
-        System.out.println("Vets specialization is"+ max.specialization);
+
+        max.setName("Jose");
+        max.setSpecialization("Surgery");
+
+        System.out.println("Vets name is "+ max.getName());
+        System.out.println("Vets specialization is "+ max.getSpecialization());
+
+        System.out.println("  ");
 
         GirlRescuer jess = new GirlRescuer();
-        System.out.println("Girl's name is"+ jess.name);
-        System.out.println("Girl rescuer has available for adopting"+ jess.budget + "euro.");
+        jess.setName("Gigi");
+        jess.setBudget(2500);
+
+        System.out.println("Girl's name is "+ jess.getName());
+        System.out.println("Girl rescuer has available for adoption "+ jess.getBudget() + " euro.");
+
+        System.out.println("  ");
 
         BoyRescuer jake = new BoyRescuer();
-        System.out.println("Boy's name is"+ jake.name);
-        System.out.println("Boy rescuer has available for adopting"+ jake.budget + "euro.");
+        jake.setName("Raz");
+        jake.setBudget(1500);
+
+        System.out.println("Boy's name is "+ jake.getName());
+        System.out.println("Boy rescuer has available for adoption "+ jake.getBudget() + " euro.");
 
     }
 }

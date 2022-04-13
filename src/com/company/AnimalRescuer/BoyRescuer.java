@@ -1,7 +1,21 @@
 package com.company.AnimalRescuer;
 
 public class BoyRescuer {
-    String name = "Jake";
-    int budget = 1500;
+    private String name;
+    private int budget;
+
+    public String getName(){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public int getBudget(){
+        return this.budget;
+    }
+    public void setBudget(int budget){
+        this.budget = budget;
+    }
 
 }
