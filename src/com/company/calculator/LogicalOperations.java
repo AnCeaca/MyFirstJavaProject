@@ -260,7 +260,79 @@ public class LogicalOperations {
         }
     }
 
+    //ex 1 (while)
 
+    public void count (int x){
+        int i = x;
+        while (i <= 100){
+            System.out.println(i);
+            i++;
+        }
+    }
+    //ex 2
+
+    public void countBackwards(int x){
+        int i = x;
+        while (i >= -100){
+            System.out.println(i);
+            i--;
+        }
+    }
+    //ex 3
+
+    public void betweenNumbers(int x, int y){
+        int i = x;
+        while (i >= y){
+            System.out.println(i);
+            i--;
+        }
+    }
+    //ex 4
+
+
+    //ex 5
+
+   /* public void even(int x){
+        int i = x;
+        while (i <= 100){
+            if (i % 2 == 0){
+            }
+            System.out.println(i);
+            i++;
+        }
+    }
+    */
+
+    //ex 6
+
+    /* public void odd(int x){
+        int i = x;
+        while (i <= 100){
+            if (i % 2 != 0){
+            }
+            System.out.println(i);
+            i++;
+        }
+    } */
+    //ex 7
+
+    //ex 8
+
+    public double averageNumbers(int first, int second){
+        int i = first;
+        int sum = 0;
+        double counter = 0;
+        while(i <= second){
+            if(i % 7 == 0){
+                sum = i + sum;
+            }
+            i++;
+            counter++;
+
+        }
+        System.out.println(counter);
+        return sum/counter;
+    }
 
 
 }

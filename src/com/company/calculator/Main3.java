@@ -26,23 +26,31 @@ public class Main3 {
 
     //    System.out.println(op.biggerNumber(9,5,10));
 
-        op.countTo(60);
-        System.out.println(" ");
-        op.countBack(5);
-        System.out.println(" ");
-        op.countTwo(20,5);
-        System.out.println(" ");
+        //For loop ex:
+    //    op.countTo(60);
+     //   op.countBack(5);
+     //   op.countTwo(20,5);
       //  op.minMax(7,6);
-        System.out.println(" ");
-        op.evenNumbers(100);
-        System.out.println(" ");
-        op.oddNumbers(100);
-        System.out.println(" ");
-        op.printSum(1,100);
-        System.out.println(" ");
-        op.printSumAndAverage(1,100);
-        System.out.println(" ");
-        op.pattern(8,1);
+     //   op.evenNumbers(100);
+     //   op.oddNumbers(100);
+     //   op.printSum(1,100);
+     //   op.printSumAndAverage(1,100);
+     //   op.pattern(8,1);
+
+        //While loop ex:
+        op.count(16);
+        op.countBackwards(3);
+        op.betweenNumbers(16,5);
+     //   op.even(80);
+     //   op.odd(80);
+        op.averageNumbers(1,100);
+
+
+
+
+
+
+
 
 
 
