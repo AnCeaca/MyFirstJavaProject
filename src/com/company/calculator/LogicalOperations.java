@@ -199,20 +199,24 @@ public class LogicalOperations {
         for (int i = first; i>=second; i--){
             System.out.println(i);
         }
+        for (int i = first; i<=second; i++){
+        }
     }
     //ex 4 (LAB 12)
 
-   /* public void minMax(int x, int y){
-        for (int i = x; i>=y; i++){
-            System.out.println(i);
-        }for (int i = y; i>= x; i++){
-            System.out.println(i);
+    public void minMax(int x, int y){
+        if(x<y){
+            for(int i = x; i <= y; i++){
+                System.out.println(i);
+            }
+        }else if(y<x){
+            for(int i = y; i <= x; i++){
+                System.out.println(i);
+            }
+        }else{
+            System.out.println("Numbers are equal");
         }
     }
-
-    */
-
-
     //ex 5 (LAB 12)
 
     public void evenNumbers (int x){
@@ -289,32 +293,61 @@ public class LogicalOperations {
     }
     //ex 4
 
-
-    //ex 5
-
-   /* public void even(int x){
-        int i = x;
-        while (i <= 100){
-            if (i % 2 == 0){
+    public void countBetweenWhile(int firstNumber, int secondNumber) {
+        if(firstNumber < secondNumber){
+            while (firstNumber <= secondNumber) {
+                System.out.println(firstNumber);
+                firstNumber++;
             }
-            System.out.println(i);
-            i++;
+        }
+        else if(secondNumber < firstNumber){
+            while (secondNumber <= firstNumber) {
+                System.out.println(firstNumber);
+                firstNumber++;
+            }
+        }
+        else{
+            System.out.println("The numbers are equal");
         }
     }
-    */
+    //ex 5
 
+    public void evenNumbersWhile() {
+        int number = 1;
+        while (number <= 100) {
+            number++;
+            if (number % 2 == 0) {
+                System.out.println(number);
+            }
+        }
+    }
     //ex 6
 
-    /* public void odd(int x){
-        int i = x;
-        while (i <= 100){
-            if (i % 2 != 0){
+    public void unevenNumbersWhile() {
+        int number = 1;
+        while (number <= 100) {
+            number++;
+            if (number % 2 != 0) {
+                System.out.println(number);
             }
-            System.out.println(i);
-            i++;
         }
-    } */
+    }
     //ex 7
+
+    public void sumAndAverageWhile() {
+        int firstNumber = 111;
+        int secondNumber = 8899;
+        double sum = 0;
+        int count = 0;
+        while (firstNumber <= secondNumber) {
+            sum += firstNumber;
+            firstNumber++;
+            count++;
+        }
+        System.out.println(sum);
+        double average = sum / count;
+        System.out.println("The average of the numbers is: " + average);
+    }
 
     //ex 8
 
@@ -328,14 +361,120 @@ public class LogicalOperations {
             }
             i++;
             counter++;
-
         }
         System.out.println(counter);
         return sum/counter;
     }
+    //ex 9
+
+    public void fibonacci() {
+        int count = 20;
+        int num1 = 0;
+        int num2 = 1;
+        int i=1;
+        while(i<=count)
+        {
+            System.out.print(num1+" ");
+            int sumOfPrevTwo = num1 + num2;
+            num1 = num2;
+            num2 = sumOfPrevTwo;
+            i++;
+        }
+    }
+    //ex 10
+
+    public void wozaCozaLoza() {
+
+        int i = 1;
+
+        while (i <= 110) {
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaLozaWoza ");
+
+            } else if (i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("WozaLoza ");
+
+            } else if (i % 3 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaWoza ");
+
+            } else if (i % 3 == 0 && i % 5 == 0) {
+
+                System.out.print("CozaLoza ");
+
+            } else if (i % 7 == 0) {
+
+                System.out.print("Woza ");
+
+            } else if (i % 5 == 0) {
+
+                System.out.print("Loza ");
+
+            } else if (i % 3 == 0) {
+
+                System.out.print("Coza ");
+
+            } else {
+
+                System.out.print(i + " ");
+
+            }
+
+            if (i % 11 == 0) {
+
+                System.out.println();
+
+            }
+
+            i++;
+
+        }
+
+    }
+
+
+    //ARRAY
+
+
+    public int[] populateArrayToNumber(int max){
+        int[] myArray = new int[max];
+        for (int i = 0; i < myArray.length; i++){
+            myArray[i] = i + 1;
+        }
+        return myArray;
+    }
+
+    public void printArray(int[] array){
+        for (int i = 0; i< array.length; i++){
+            System.out.print(array[i]+", ");
+        }
+    }
+
+    public double sumOfArray(int[] array){
+        float sumArray = array[0];
+        for (int i = 1; i < array.length; i++){
+            sumArray = sumArray + array[i];
+        }
+        return sumArray;
+    }
+
+    public double getAverageFromArray(int[] array) {
+        return sumOfArray(array) / array.length;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
-
-
-

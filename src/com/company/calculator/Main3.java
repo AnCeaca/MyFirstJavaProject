@@ -38,20 +38,31 @@ public class Main3 {
      //   op.pattern(8,1);
 
         //While loop ex:
-        op.count(16);
-        op.countBackwards(3);
-        op.betweenNumbers(16,5);
+     //   op.count(16);
+     //   op.countBackwards(3);
+     //   op.betweenNumbers(16,5);
      //   op.even(80);
      //   op.odd(80);
-        op.averageNumbers(1,100);
+     //   op.averageNumbers(1,100);
 
 
 
 
+        int[] myArray = op.populateArrayToNumber(100);
 
+//        op.printArray(myArray);
 
+     //   int[] testArray = {12,3,6765,123,6,856};
+     //   int sum = myArray[0];
+     //   sum = sum + myArray[1];
+     //   sum = sum + myArray[2];
+     //   sum = sum + myArray[3];
+    //    sum = sum + myArray[4];
 
+     //   System.out.println(op.getAverageFromArray(myArray));
+      //  System.out.println(op.getAverageFromArray(testArray));
 
+      //  int[] evenArray = op.evenArrayNumbers(100);
 
 
 

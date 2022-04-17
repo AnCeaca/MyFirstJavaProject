@@ -1,5 +1,5 @@
 package com.company.AnimalRescuer;
 
-public class Dog extends Animal{
+public class Parrot extends Animal{
 
 }

@@ -33,7 +33,7 @@ public class AppMain {
         fishy.setWeight(19);
         fishy.setOwnerName("Bianca");
         fishy.setRace("Siamese");
-        fishy.setIsFemale(true);
+        fishy.setIsMale(false);
 
         System.out.println("Cat's colour is "+ fishy.getColor());
         System.out.println("Cat's age is "+ fishy.getAgeInMonths() + " months");
@@ -41,7 +41,7 @@ public class AppMain {
         System.out.println("Cat's weight is "+ fishy.getWeight());
         System.out.println("Cat's owner name is "+ fishy.getOwnerName());
         System.out.println("Cat's race is "+ fishy.getRace());
-        System.out.println("Cat is female? " + fishy.getIsFemale());
+        System.out.println("Cat is male? " + fishy.getIsMale());
 
         System.out.println("  ");
 
@@ -70,6 +70,22 @@ public class AppMain {
 
         System.out.println("Boy's name is "+ jake.getName());
         System.out.println("Boy rescuer has available for adoption "+ jake.getBudget() + " euro.");
+
+        System.out.println("  ");
+
+        Parrot papa = new Parrot();
+        papa.setName("Rainbow");
+
+        System.out.println("My name is " + papa.getName());
+
+        System.out.println("  ");
+
+        Rabbit crunchy = new Rabbit();
+        crunchy.setColor("Purple");
+
+        System.out.println("Rabbit's color is " +crunchy.getColor());
+
+
 
     }
 }
