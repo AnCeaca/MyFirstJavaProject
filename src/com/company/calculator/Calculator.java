@@ -25,4 +25,6 @@ public class Calculator {
         int result = firstNumber % secondNumber;
         return result;
     }
+
+
 }

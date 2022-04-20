@@ -3,7 +3,7 @@ package com.company.calculator;
 public class Main3 {
 
     public static void main(String[] args) {
-     //   Calculator calc = new Calculator();
+        Calculator calc = new Calculator();
         LogicalOperations op = new LogicalOperations();
 
      //   System.out.println(calc.divide(21,3));
@@ -27,7 +27,7 @@ public class Main3 {
     //    System.out.println(op.biggerNumber(9,5,10));
 
         //For loop ex:
-    //    op.countTo(60);
+        // op.countTo(60);
      //   op.countBack(5);
      //   op.countTwo(20,5);
       //  op.minMax(7,6);
@@ -37,7 +37,7 @@ public class Main3 {
      //   op.printSumAndAverage(1,100);
      //   op.pattern(8,1);
 
-        //While loop ex:
+     //   While loop ex:
      //   op.count(16);
      //   op.countBackwards(3);
      //   op.betweenNumbers(16,5);
@@ -45,24 +45,57 @@ public class Main3 {
      //   op.odd(80);
      //   op.averageNumbers(1,100);
 
+        //Array exercises:
+
+     //   int[] myArray = op.populateArrayToNumber(100);
+     //   op.printArray(myArray);
+
+     //   int[] evenArray = new int[100];
+     //   op.populateEvenNumbersArray(evenArray);
+     //   op.printArray(evenArray);
+
+     //   double[] averageArray = {25, 3, 16, 9, 30};
+     //   op.populateAverageOfArray(averageArray);
+     //   op.printArray(averageArray);
+
+     //   String[] valueArray = {"Blue", "Green", "Purple", "Black"};
+     //   op.findValueInArray(valueArray);
+    //    op.printArray(valueArray);
+
+        //ex 6
+
+        //ex 7
+
+    //   int[] patternArray = new int[10];
+    //    op.printPatternArray(patternArray);
+    //    op.printPatternArray(patternArray);
+
+        //ex 8
+
+        //ex 9
+
+        int[] secondSmallest = {23,105,98,56,73,2,11};
+        op.printSecondSmallest((secondSmallest));
+        op.printArray(secondSmallest);
+
+        //ex 10
+
+    //    int[] copyArray = {13,17,9,25,36};
+    //    op.copyFromArray(copyArray);
+    //    op.printArray(copyArray);
 
 
 
-        int[] myArray = op.populateArrayToNumber(100);
 
-//        op.printArray(myArray);
 
-     //   int[] testArray = {12,3,6765,123,6,856};
-     //   int sum = myArray[0];
-     //   sum = sum + myArray[1];
-     //   sum = sum + myArray[2];
-     //   sum = sum + myArray[3];
-    //    sum = sum + myArray[4];
 
-     //   System.out.println(op.getAverageFromArray(myArray));
-      //  System.out.println(op.getAverageFromArray(testArray));
 
-      //  int[] evenArray = op.evenArrayNumbers(100);
+
+
+
+
+
+
 
 
 

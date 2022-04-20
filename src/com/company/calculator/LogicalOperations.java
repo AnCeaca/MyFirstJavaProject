@@ -438,15 +438,6 @@ public class LogicalOperations {
 
     //ARRAY
 
-
-    public int[] populateArrayToNumber(int max){
-        int[] myArray = new int[max];
-        for (int i = 0; i < myArray.length; i++){
-            myArray[i] = i + 1;
-        }
-        return myArray;
-    }
-
     public void printArray(int[] array){
         for (int i = 0; i< array.length; i++){
             System.out.print(array[i]+", ");
@@ -464,6 +455,97 @@ public class LogicalOperations {
     public double getAverageFromArray(int[] array) {
         return sumOfArray(array) / array.length;
     }
+
+
+    //ex 2:
+
+    public int[] populateArrayToNumber(int max){
+        int[] myArray = new int[max];
+        for (int i = 0; i < myArray.length; i++){
+            myArray[i] = i + 1;
+        }
+        return myArray;
+    }
+    //ex 3:
+
+    public void populateEvenNumbersArray (int[] array){
+        int pos = 0;
+        for (int i = 1; i <= array.length; i++){
+            if (i%2==0){
+                array[pos] = i;
+                pos++;
+            }
+        }
+    }
+    //ex 4:
+
+    public double populateAverageOfArray (double[] array){
+        double sum = 0;
+        for(int i = 0; i < array.length; i++){
+            sum = sum + array[i];
+        }
+        double average = sum/array.length;
+        System.out.println("The average is: " + average);
+        return average;
+    }
+    //ex 5:
+
+    public boolean findValueInArray(String[] array){
+        String value = "Green";
+            for (String i: array){
+                if(value.equals(i)){
+                    return true;
+                }
+            }
+            return false;
+    }
+    //ex 6:
+
+   // public int checkNumberInArray (int[] array, int value){
+   //     int value = 16;
+
+
+   // }
+
+    //ex 7:
+
+    public void printPatternArray(int[] row) {
+        for (int i = 1 ; i <= row.length; i++) {
+            for (int j = 1; j <= row.length; j++) {
+                System.out.println("-");
+           }
+            System.out.println();
+        }
+    }
+
+    //ex 8:
+
+    //ex 9:
+
+    public int printSecondSmallest(int[] array){
+        int smallest = array[0];
+        int secondSmallest = 0;
+        for (int i = 0; i < array.length; i++){
+            if(array[i] != smallest && array[i] < smallest);
+            secondSmallest = array[i];
+        }
+        return secondSmallest;
+    }
+
+    //ex 10:
+
+    public int[] copyFromArray(int[] array){
+        int[] newArray = new int[5];
+        for(int i = 0; i<array.length; i++){
+            newArray[i] = array[i];
+        }
+        return newArray;
+    }
+
+
+
+
+
 
 
 
