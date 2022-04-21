@@ -74,15 +74,36 @@ public class Main3 {
 
         //ex 9
 
-        int[] secondSmallest = {23,105,98,56,73,2,11};
-        op.printSecondSmallest((secondSmallest));
-        op.printArray(secondSmallest);
+     //   int[] secondSmallest = {23,105,98,56,73,2,11};
+     //   op.printSecondSmallest((secondSmallest));
+     //   op.printArray(secondSmallest);
 
         //ex 10
 
     //    int[] copyArray = {13,17,9,25,36};
     //    op.copyFromArray(copyArray);
     //    op.printArray(copyArray);
+
+
+    //    int[] insertElement = {15, 9, 16, 13, 7};
+    //    op.insertElement(insertElement);
+    //   op.printArray(insertElement);
+
+    //    int[] minMax = {20, 105, 1, 13, 600};
+    //    op.minMax(minMax);
+    //    op.printArray(minMax);
+
+    //    int[] array = {17, 203, 23, 19};
+    //    op.reverseArray(array);
+    //    op.printArray(array);
+
+    //    int[] duplicateArray = {22, 13, 2, 7, 2, 13};
+    //    op.findDuplicateInArray(duplicateArray);
+    //    op.printArray(duplicateArray);
+
+
+
+
 
 
 

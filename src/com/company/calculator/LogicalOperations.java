@@ -542,6 +542,59 @@ public class LogicalOperations {
         return newArray;
     }
 
+    //Array optional
+
+    //ex1
+
+    public int insertElement(int[] array){
+        int pos = 2;
+        int value = 5;
+        for(int i = array.length -1; i > pos; i--){
+            array[i] = array[i-1];
+        }
+        array[pos] = value;
+        return array[pos];
+    }
+    //ex2
+
+    public int minMax (int[] array){
+        int minValue = array[0];
+        int maxValue = array[0];
+        for(int i = 0; i < array.length; i++){
+            if (array[i] <minValue){
+                minValue = array[i];
+            }
+            if (array[i] > maxValue){
+                maxValue = array[i];
+            }
+        }
+        System.out.println("Minimum value is: " + minValue + "Maximum value is: " + maxValue);
+        return minValue + maxValue;
+    }
+    //ex 3 nu reusesc sa imi dau seama ce e gresit
+
+    public int [] reverseArray (int[] array){
+        int[] newArray = new int[4];
+        for(int i = array.length-1; i >= 0; i--) {
+            System.out.println(newArray [i] + " ");
+        }
+        return newArray;
+    }
+    //ex4
+
+    public int[] findDuplicateInArray (int [] myArray){
+        int[] duplicateArray = new int [6];
+        for(int i = 0; i < myArray.length - 1; i++){
+            for(int j = i + 1; j < myArray.length; j++){
+                if( (myArray[i] == myArray[j] && i != j)){
+                    System.out.println("Duplicated element is: " + myArray[j]);
+                }
+            }
+        }
+        return duplicateArray;
+    }
+
+
 
 
 
