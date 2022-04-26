@@ -1,6 +1,6 @@
 package com.company.AnimalRescuer;
 
-public class Humans extends LivingBeings{
+public abstract class Humans extends LivingBeings{
 
     private String name;
     private int budget;
@@ -27,9 +27,7 @@ public class Humans extends LivingBeings{
         this.specialization = specialization;
     }
 
-    public void speaking(){
-        System.out.println("Hello!");
-    }
+    public abstract void speaking();
 
 
 

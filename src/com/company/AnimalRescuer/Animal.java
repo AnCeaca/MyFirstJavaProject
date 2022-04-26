@@ -1,6 +1,6 @@
 package com.company.AnimalRescuer;
 
-public class Animal extends LivingBeings{
+public abstract class Animal extends LivingBeings{
 
     private String name;
     private int ageInMonths;
@@ -60,21 +60,12 @@ public class Animal extends LivingBeings{
         this.isMale = isMale;
     }
 
-    public void speak(){
-        System.out.println("sound");
-    }
+    public abstract void speak();
+    public abstract void play();
+    public abstract void sleep();
+    public abstract void eat();
 
-    public void play(){
-        System.out.println("Playing");
-    }
-
-    public void sleep(){
-        System.out.println("ZZzzZZzz");
-    }
-
-    public void eat(){
-        System.out.println("eating");
-    }
+    
 
 
 
