@@ -76,4 +76,8 @@ public class LivingBeings {
     public void setSpecialization(String specialization){
         this.specialization = specialization;
     }
+
+
+
+
 }

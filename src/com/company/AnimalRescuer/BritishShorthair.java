@@ -1,26 +1,24 @@
 package com.company.AnimalRescuer;
 
-public class Dog extends Animal{
+public class BritishShorthair extends Cat{
 
     @Override
     public void speak() {
-        System.out.println("Woof!");
+        System.out.println("Meooooow!");
     }
 
     @Override
     public void play() {
-        System.out.println("Playing with the ball");
+        System.out.println("Playing with the mouse");
     }
 
     @Override
     public void sleep() {
-        System.out.println("ZZWolfzz");
+        System.out.println("ZzZz Meeeow!");
     }
 
     @Override
     public void eat() {
-        System.out.println("Eating meat!");
+        System.out.println("YUMMMMM!");
     }
-
-
 }

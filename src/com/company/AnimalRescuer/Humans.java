@@ -27,6 +27,11 @@ public class Humans extends LivingBeings{
         this.specialization = specialization;
     }
 
+    public void speaking(){
+        System.out.println("Hello!");
+    }
+
+
 
 
 

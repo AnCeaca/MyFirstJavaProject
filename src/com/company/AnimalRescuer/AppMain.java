@@ -5,7 +5,7 @@ import java.sql.SQLOutput;
 public class AppMain {
 
     public static void main(String[] args) {
-        Dog bubble = new Dog();
+    /*    Dog bubble = new Dog();
 
         bubble.setName("Cookie");
         bubble.setAgeInMonths(12);
@@ -84,6 +84,54 @@ public class AppMain {
         crunchy.setColor("Purple");
 
         System.out.println("Rabbit's color is " +crunchy.getColor());
+
+        System.out.println("  ");*/
+
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+        Frenchie frenchie = new Frenchie();
+        Cat cat = new Cat();
+        BritishShorthair british = new BritishShorthair();
+        Parrot parrot = new Parrot();
+
+        animal.speak();
+        dog.speak();
+        frenchie.speak();
+        cat.speak();
+        british.speak();
+        parrot.speak();
+
+        animal.play();
+        dog.play();
+        frenchie.play();
+        cat.play();
+        british.play();
+        parrot.play();
+
+        animal.sleep();
+        dog.sleep();
+        frenchie.sleep();
+        cat.sleep();
+        british.sleep();
+        parrot.sleep();
+
+        animal.eat();
+        dog.eat();
+        frenchie.eat();
+        cat.eat();
+        british.eat();
+        parrot.eat();
+
+        Humans humans = new Humans();
+        BoyRescuer boy = new BoyRescuer();
+        GirlRescuer girl = new GirlRescuer();
+        Veterinarian vet = new Veterinarian();
+
+        humans.speaking();
+        boy.speaking();
+        girl.speaking();
+        vet.speaking();
+
 
 
 

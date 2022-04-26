@@ -59,4 +59,35 @@ public class Animal extends LivingBeings{
 
         this.isMale = isMale;
     }
+
+    public void speak(){
+        System.out.println("sound");
+    }
+
+    public void play(){
+        System.out.println("Playing");
+    }
+
+    public void sleep(){
+        System.out.println("ZZzzZZzz");
+    }
+
+    public void eat(){
+        System.out.println("eating");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+

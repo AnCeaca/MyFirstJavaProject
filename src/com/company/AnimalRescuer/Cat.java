@@ -2,23 +2,39 @@ package com.company.AnimalRescuer;
 
 public class Cat extends Animal{
 
+    @Override
     public void speak() {
-        System.out.println("Meow!Meow!");
+        System.out.println("Miau!");
     }
 
-    public void eat(){
+    @Override
+    public void play() {
+        System.out.println("Playing catch it!");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("ZZzzMeoooow!");
+    }
+
+    @Override
+    public void eat() {
         System.out.println("Eating cat food");
-    }
-
-    public void sleep(){
-        System.out.println("zzzzZZZ");
     }
 
     public void run(){
         System.out.println("Running");
     }
 
-    public void play(){
-        System.out.println("playing");
-    }
+
+
+
+
+
+
+
+
+
+
+
 }
