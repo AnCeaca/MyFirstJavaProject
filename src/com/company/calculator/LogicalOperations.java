@@ -1,5 +1,9 @@
 package com.company.calculator;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class LogicalOperations {
 
     //ex 3
@@ -501,24 +505,40 @@ public class LogicalOperations {
     }
     //ex 6:
 
-   // public int checkNumberInArray (int[] array, int value){
-   //     int value = 16;
-
-
-   // }
+    public int checkNumberInArray (int[] Numbers, int nr){
+        for(int i = 0; i< Numbers.length; i++){
+            if (Numbers[i] == nr){
+                return i;
+            }
+        }
+        return 0;
+    }
 
     //ex 7:
 
-    public void printPatternArray(int[] row) {
-        for (int i = 1 ; i <= row.length; i++) {
-            for (int j = 1; j <= row.length; j++) {
-                System.out.println("-");
-           }
-            System.out.println();
+    public void printPatternArray() {
+        char[] line =  {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+        for (int i = 0; i<=10; i++){
+            System.out.println(line);
         }
     }
 
     //ex 8:
+
+    public int[] removeNrFromArray(int[] myArray, int nr) {
+
+        int[] secondArray = new int[myArray.length];
+        int j = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] == nr)
+                continue;
+            secondArray[j++] = myArray[i];
+        }
+        int[] finArray = new int[j];
+        for (int i = 0; i < j; i++)
+            finArray[i] = secondArray[i];
+        return finArray;
+    }
 
     //ex 9:
 
@@ -594,6 +614,50 @@ public class LogicalOperations {
         return duplicateArray;
     }
 
+
+    //Lists:
+
+    public List<Integer> getListToNumber(int number){
+        List<Integer> myList = new ArrayList<>();
+        for(int i = 0; i <= number; i++){
+            myList.add(i);
+        }
+        return myList;
+    }
+
+    //ex1
+    public void printList(List<Integer> list){
+        for(Integer x:list){
+            System.out.println(x);
+        }
+    }
+
+    //ex3
+    public void printListFromNumber(List<Integer> list, int number){
+        for( int i = number; i < list.size(); i++){
+            System.out.println(list.get(i));
+        }
+    }
+
+    //ex4
+    public void printReverseList(List<Integer> list){
+        for(Integer x:list){
+           Collections.reverse(list);
+        }
+    }
+
+    //ex5
+
+
+    //ex8
+    public void printBiggestNumberInList(List<Integer> myList){
+        int maxValue = myList.get(0);
+        for (int i = 1; i < myList.size(); i++){
+            if (maxValue < myList.get(i));
+            maxValue = myList.get(i);
+        }
+        System.out.println("Biggest number is: " + maxValue);
+    }
 
 
 
